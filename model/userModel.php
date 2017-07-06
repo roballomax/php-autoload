@@ -1,9 +1,9 @@
 <?php
 
-class UserModel {
+class UserModel extends Database {
 
     public function __construct(){
-        echo "UserModel Carregado! <br>";
+        parent::__construct();
     }
 
 

@@ -30,6 +30,7 @@ function __autoload($className){
         }
             
     } catch (Exception $e){
+        //caso ele não encontre a classe, ele chama a página de 404
         require_once('errorPages/404.html');
         die;
     }
